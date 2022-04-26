@@ -24,7 +24,7 @@ function CreateArea(props) {
       <form>
         {(isDisplay && <input name="title" placeholder="Title" onChange={handleChange} value={createData.title}/>)}
         <textarea name="content" placeholder="Take a note..." rows={isDisplay?"3":"1"} onChange={handleChange} onClick={props.click} value={createData.content}/>
-        <button className="formBtn" onClick={(event)=>{props.handleSubmit(createData); event.preventDefault();}}><AddIcon /></button>
+        {(isDisplay && <button className="formBtn" onClick={(event)=>{props.handleSubmit(createData); event.preventDefault();}}><AddIcon /></button>)}
       </form>
     </div>
   );
