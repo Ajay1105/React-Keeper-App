@@ -1,3 +1,2 @@
 # React-Keeper-App
-It is React app
-It is note keeping app
+It is React note keeping app
